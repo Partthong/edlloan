@@ -19,9 +19,9 @@
         "@fullcalendar/react": "^5.11.2",
         "@fullcalendar/timegrid": "^5.11.2",
         "@mui/material": "^5.11.15",
-        "@mui/x-date-pickers": "^6.0.3",
+
         "axios": "^1.3.4",
-        "bootstrap": "^5.2.3",
+
         "chart.js": "^3.9.1",
         "jspdf": "^2.5.1",
         "jspdf-autotable": "^3.5.28",
@@ -33,17 +33,17 @@
         "primereact": "^8.6.1",
         "primereact-tree": "^6.3.1",
         "react": "17.0.2",
-        "react-bootstrap-sweetalert": "^5.2.0",
+
         "react-datepicker": "^4.11.0",
         "react-dom": "17.0.2",
-        "react-file-base64": "^1.0.3",
+
         "react-router-dom": "^6.9.0",
         "react-transition-group": "^4.4.5"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.13",
         "eslint": "8.21.0",
-        "eslint-config-next": "12.2.4",
+
         "postcss": "^8.4.21",
         "prettier": "2.7.1",
         "sass": "^1.54.4",

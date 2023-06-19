@@ -1,18 +1,15 @@
-import getConfig from 'next/config';
+
 import { Button } from 'primereact/button';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
-import { DataView } from 'primereact/dataview';
+
 import { useRouter } from 'next/router';
 import { Dialog } from 'primereact/dialog';
-import { FileUpload } from 'primereact/fileupload';
-import { InputText } from 'primereact/inputtext';
+
 import { Toast } from 'primereact/toast';
-import { Toolbar } from 'primereact/toolbar';
-import { classNames } from 'primereact/utils';
+
 import React, { useEffect, useRef, useState } from 'react';
-import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
-import { PrimeIcons } from 'primereact/api';
+
 
 import { Tag } from 'primereact/tag';
 import axiosInterceptorInstance from '../../../demo/components/axios';

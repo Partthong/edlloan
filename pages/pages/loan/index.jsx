@@ -1,4 +1,4 @@
-import getConfig from 'next/config';
+
 import { Button } from 'primereact/button';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
@@ -7,14 +7,14 @@ import { FileUpload } from 'primereact/fileupload';
 import { InputText } from 'primereact/inputtext';
 import { InputNumber } from 'primereact/inputnumber';
 import { RadioButton } from 'primereact/radiobutton';
-import axios from 'axios';
+
 import { useRouter } from 'next/router';
 
 import { Calendar } from 'primereact/calendar';
 import { Toast } from 'primereact/toast';
 import { Dropdown } from 'primereact/dropdown';
 import { Toolbar } from 'primereact/toolbar';
-import { classNames } from 'primereact/utils';
+
 import React, { useEffect, useRef, useState } from 'react';
 import moment from 'moment';
 import axiosInterceptorInstance from '../../../demo/components/axios';
@@ -424,7 +424,7 @@ function loan() {
                             </div>
                         </Dialog>
 
-                    
+
                     </div>
                 </div>
             </div>

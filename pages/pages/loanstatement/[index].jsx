@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { InputNumber } from 'primereact/inputnumber';
-import { InputText } from 'primereact/inputtext';
+
 import { Button } from 'primereact/button';
 import { DataView } from 'primereact/dataview';
-import { Rating } from 'primereact/rating';
+
 import { Tag } from 'primereact/tag';
-import axios from 'axios';
+
 import { Dialog } from 'primereact/dialog';
 import { useRouter } from "next/router";
 import { Toolbar } from 'primereact/toolbar';
@@ -94,7 +93,7 @@ const LoanStatement = () => {
     const rightToolbarTemplate = () => {
         return (
             <React.Fragment>
-               
+
                 <Button label="ພິມອອກ" icon="pi pi-print" className="p-button-help" onClick={exportCSV} />
             </React.Fragment>
         );

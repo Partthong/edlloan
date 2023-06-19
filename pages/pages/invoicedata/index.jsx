@@ -1,15 +1,13 @@
-import getConfig from 'next/config';
+
 import { Button } from 'primereact/button';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
-import { Dialog } from 'primereact/dialog';
-import { FileUpload } from 'primereact/fileupload';
+
 import { InputText } from 'primereact/inputtext';
 import { Toast } from 'primereact/toast';
-import { Toolbar } from 'primereact/toolbar';
-import { classNames } from 'primereact/utils';
+
 import React, { useEffect, useRef, useState } from 'react';
-import InvoiceJsPDF from '../jspdf';
+
 import { useRouter } from 'next/router';
 import axiosInterceptorInstance from '../../../demo/components/axios';
 
@@ -110,7 +108,7 @@ function Invoicedata() {
     const actionBodyTemplate = (rowData) => {
         return (
             <>
-          
+
                 <Button icon="pi pi-pencil" className="p-button-rounded p-button-success mr-2" onClick={() => editBank(rowData)} />
                 <Button icon="pi pi-user-edit" className="p-button-rounded p-button-warning mr-2" onClick={() => confirmDeleteBank(rowData)} />
                 <Button icon="pi pi-trash" className="p-button-rounded p-button-danger" onClick={() => confirmDeleteBank(rowData)} />
@@ -165,13 +163,6 @@ function Invoicedata() {
                             <Column field="date_in" header="ວັນທີເພີ່ມ" sortable headerStyle={{ minWidth: '10rem' }} ></Column>
                             <Column body={actionBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
                         </DataTable>
-
-                        <div className='row'>
-                            <div className='col'>
-                            <InvoiceJsPDF orderData={invoiceList} />
-                            </div>
-                        </div>
-
 
 
                     </div>

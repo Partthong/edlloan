@@ -1,4 +1,4 @@
-import getConfig from 'next/config';
+
 import { Button } from 'primereact/button';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
@@ -8,9 +8,9 @@ import { InputText } from 'primereact/inputtext';
 import { Toast } from 'primereact/toast';
 import { Toolbar } from 'primereact/toolbar';
 import { useRouter } from 'next/router';
-import { classNames } from 'primereact/utils';
+
 import React, { useEffect, useRef, useState } from 'react';
-import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
+
 import axiosInterceptorInstance from '../../../demo/components/axios';
 
 function LoanType() {
@@ -209,7 +209,7 @@ function LoanType() {
                             </div>
                         </Dialog>
 
-                       
+
                     </div>
                 </div>
             </div>

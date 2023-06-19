@@ -1,10 +1,10 @@
-import Link from 'next/link';
+
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { InputNumber } from 'primereact/inputnumber';
 import { Calendar } from 'primereact/calendar';
 import { AutoComplete } from 'primereact/autocomplete';
-import axios from 'axios';
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Toolbar } from 'primereact/toolbar';
 import { useRouter } from 'next/router';
@@ -78,7 +78,7 @@ function InvoiceWithdraw() {
          catch (error) {
             console.error(error);
             toast.current.show({ severity: 'error', summary: 'ຜິດພາດ', detail: 'Authorization has been denied' });
-            // router.push('/auth/login');
+           
         }
 
       };
@@ -114,7 +114,7 @@ function InvoiceWithdraw() {
 
     const search = (event) => {
         console.log('event.query==>', event.query);
-      
+
         setTimeout(() => {
             let _filteredLoan;
 

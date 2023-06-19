@@ -1,13 +1,10 @@
-import getConfig from 'next/config';
+
 import { Button } from 'primereact/button';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
-import { Dialog } from 'primereact/dialog';
-import { FileUpload } from 'primereact/fileupload';
+
 import { InputText } from 'primereact/inputtext';
-import { Toast } from 'primereact/toast';
-import { Toolbar } from 'primereact/toolbar';
-import { classNames } from 'primereact/utils';
+
 import React, { useEffect, useRef, useState } from 'react';
 
 function WithdrawData() {
@@ -124,7 +121,7 @@ function WithdrawData() {
                             <Column body={actionBodyTemplate} headerStyle={{ minWidth: '10rem' }}></Column>
                         </DataTable>
 
-                      
+
 
                     </div>
                 </div>
