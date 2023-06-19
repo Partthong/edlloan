@@ -1,14 +1,12 @@
 import getConfig from 'next/config';
-import { Button } from 'primereact/button';
+
 import { Chart } from 'primereact/chart';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
-import { Menu } from 'primereact/menu';
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import { ProductService } from '../demo/service/ProductService';
 import { LayoutContext } from '../layout/context/layoutcontext';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
+
 
 const Dashboard = () => {
     const [products, setProducts] = useState(null);
