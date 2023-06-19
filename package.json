@@ -1,7 +1,7 @@
 {
     "name": "sakai-react",
     "version": "8.0.1-SNAPSHOT",
-    "private": false,
+    "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
