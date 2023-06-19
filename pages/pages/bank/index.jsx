@@ -1,4 +1,4 @@
-import getConfig from 'next/config';
+
 import { Button } from 'primereact/button';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
@@ -8,9 +8,9 @@ import { InputText } from 'primereact/inputtext';
 import { Toast } from 'primereact/toast';
 import { Toolbar } from 'primereact/toolbar';
 import { useRouter } from 'next/router';
-import { classNames } from 'primereact/utils';
+
 import React, { useEffect, useRef, useState } from 'react';
-import FileBase64 from 'react-file-base64';
+
 import axiosInterceptorInstance from '../../../demo/components/axios';
 
 function Bank() {
@@ -18,7 +18,7 @@ function Bank() {
         b_id: '',
         bankName: '',
         atm: '',
-        images: ''
+
     };
     const [bankList, setBankList] = useState([]);
     const [bank, setBank] = useState(emptyBank);
@@ -56,7 +56,6 @@ function Bank() {
         }
     };
 
-
     const InsertData = async () => {
         try {
             if (bank.bankName.trim() && bank.atm.trim()) {
@@ -64,7 +63,7 @@ function Bank() {
             var raw = {
                 bankName: bank.bankName,
                 atm: bank.atm,
-                images: bank.images
+                images: "",
             };
 
             const response = await axiosInterceptorInstance.post('/api/bank/InsertBank', raw);
@@ -229,14 +228,6 @@ function Bank() {
                             <div className="field">
                                 <label htmlFor="name">ເລກບັນຊີ</label>
                                 <InputText id="name" value={bank.atm} onChange={(e) => setBank({ ...bank, atm: e.target.value })} />
-                            </div>
-
-                            <div className="field flex justify-content-start">
-                                <label htmlFor="" className="mr-3">
-                                    ເພີ່ມໂລໂກ້
-                                </label>
-
-                                <FileBase64 onDone={({ base64 }) => setBank({ ...bank, images: base64 })} />
                             </div>
 
                         </Dialog>
